@@ -21,7 +21,7 @@ var intersect = function(nums1, nums2) {
         }
     }
 
-    // This way we are able to loop through each char of each array, 
+    // This way we are able to loop through each char of each array, push to the results the duplicates and stop the loop once once index has heached its max value.
     
     return result;
 };
