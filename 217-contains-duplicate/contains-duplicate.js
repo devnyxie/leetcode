@@ -5,10 +5,11 @@
 var containsDuplicate = function(nums) {
     const uniqueSet = new Set();
     for(let i=0; i<nums.length; i++){
-        if(uniqueSet.has(nums[i])){
+        const currVal = nums[i]
+        if(uniqueSet.has(currVal)){
             return true
         }
-        uniqueSet.add(nums[i])
+        uniqueSet.add(currVal)
     }
     return false
 };
