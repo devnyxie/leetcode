@@ -3,13 +3,12 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    const uniqueSet = new Set();
+    const uniqueSet = new Set(); // a set of unique elems
     for(let i=0; i<nums.length; i++){
-        const currVal = nums[i]
-        if(uniqueSet.has(currVal)){
+        if(uniqueSet.has(nums[i])){
             return true
         }
-        uniqueSet.add(currVal)
+        uniqueSet.add(nums[i])
     }
     return false
 };
