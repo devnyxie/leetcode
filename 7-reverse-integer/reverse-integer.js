@@ -17,7 +17,7 @@ var reverse = function(x) {
             reversedNum = (reversedNum * 10) + lastDigit;
             number = Math.floor(number / 10); // remove last digit
         }
-
+    
         if (int < 0) {
             reversedNum = -reversedNum;
         }
