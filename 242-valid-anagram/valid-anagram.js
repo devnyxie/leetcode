@@ -7,7 +7,7 @@ var isAnagram = function(s, t) {
     function sortString(str) {
         return str.split('').sort().join("");
     }
-    if(sortString(s) == sortString(t) && s.length == t.length){
+    if(sortString(s) == sortString(t)){
         return true
     }
     return false
