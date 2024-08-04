@@ -5,14 +5,9 @@
  */
 var isAnagram = function(s, t) {
     function sortString(str) {
-        const array = str.split('');
-        array.sort();
-        const sortedStr = array.join('');
-        return sortedStr;
+        return str.split('').sort().join("");
     }
-    const s_s = sortString(s);
-    const t_s = sortString(t);
-    if(s_s == t_s && s_s.length == t_s.length){
+    if(sortString(s) == sortString(t) && s.length == t.length){
         return true
     }
     return false
